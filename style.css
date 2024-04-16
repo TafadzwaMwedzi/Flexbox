@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slide {
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    background-color: aqua;
+    transition: 0.5s ease;
+    transform: translateX(-180px);
+}
+h0{
+    color: #fff;
+    font-weight: 800px;
+    text-align: center;
+    padding: 10px 0;
+    padding-right:30px;
+    pointer-events: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+input {
+    display: none;
+    visibility: hidden;
+
+}
+
+.toggle {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    
+    left: 15px;
+    z-index: 1px;
+    cursor: pointer;
+    border-radius: 2px;
+    
+    box-shadow: 0 0 10px black;
+    background:#fff;
+}
+
+.toggle .common {
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+
+.toggle .top_line {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .middle_line {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .bottom_line {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input:checked ~ .toggle .top_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+input:checked ~ .toggle .bottom_line {
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+input:checked~.toggle .middle_line {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+
+input:checked~.slide {
+    transform: translateX(0);
+    box-shadow: black;
+}
+
+#hero {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bolder;
+    /* background-color: rgb(236, 233, 17); */
+    background-image: url(./images/bg-masthead.jpg );
+    background-position: center;
+    background-size: cover;
+    padding: 150px;
+}
+
+#hero p {
+    font-size: 20px;
+}
+
+#hero h1 {
+    font-size: 40px;
+}
+
+.button {
+    margin-top: 10px;
+    background-color: rgb(12, 69, 145);
+    color: #fff;
+    border: rgb(12, 69, 145);
+    font-size: 14px;
+    padding: 6px;
+}
+
+.portfolio h2 {
+    font-size: 27px;
+}
+
+.portfolio {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 40px;
+}
+
+.portfolio p {
+    font-size: 12px;
+}
+
+
+.but {
+    margin-top: 10px;
+    background-color: rgb(2, 15, 31);
+    font-size: 16px;
+    padding: 6px;
+    color: aliceblue;
+    border: rgb(2, 15, 31);
+}
+
+.but:hover {
+    background-color: rgb(12, 69, 145);
+    color: black;
+
+}
+
+.button:hover {
+    background-color: rgb(2, 15, 31);
+    color: aliceblue;
+}
+
+#services {
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+    background-color: rgb(0, 183, 255);
+    padding: 20px;
+}
+
+#services h4 {
+    color: rgb(236, 233, 17);
+    font-size: 20px;
+}
+
+#services img {
+    width: 60px;
+    height: auto;
+    margin: 20px 50px 20px 50px;
+    padding: 5px 5px;
+}
+
+.services2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.services3 {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 10px;
+}
+
+.download {
+    text-transform: capitalize;
+    text-align: center;
+    /* background-color: rgb(217, 255, 0); */
+    background-image: url(./images/bg-callout.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 170px;
+    font-size: 20px;
+
+}
+
+#port {
+    text-transform: capitalize;
+    display: flex;
+    background-size: 20px 30px 40px 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    text-align: center;
+    font-size: 25px;
+
+}
+
+.stationery {
+    background-image: url(./images/portfolio-1.jpg);
+    font-size: 18px;
+}
+
+.strawberries {
+    background-image: url(./images/portfolio-2.jpg);
+    font-size: 14px;
+    background-size: 240px;
+}
+
+#port .ice-cream {
+    background-image: url(./images/portfolio-3.jpg);
+    font-size: 14px;
+}
+
+.workspace {
+    background-image: url(./images/portfolio-4.jpg);
+    font-size: 18px;
+}
+
+
+.ice {
+
+    margin-bottom: 10px;
+
+}
+
+#port .ice p {
+    padding: 100px 5px 10px 5px;
+
+}
+
+
+.footer {
+    text-transform: capitalize;
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(0, 183, 255);
+    margin-top: 30px;
+
+}
+
+.b {
+    margin-top: 10px;
+    background-color: #fff;
+    font-size: 7px;
+    padding: 6px 10px;
+    color: rgb(2, 15, 31);
+    border: #fff;
+}
+
+.u {
+    margin-top: 10px;
+    background-color: rgb(2, 15, 31);
+    font-size: 7px;
+    padding: 6px 10px;
+    color: aliceblue;
+    border: rgb(2, 15, 31);
+}
+
+.b:hover {
+    background-color: rgb(19, 130, 194);
+    color: aliceblue;
+}
+
+.u:hover {
+    background-color: rgb(221, 227, 230);
+    color: rgb(12, 30, 46);
+}
+
+.down {
+    margin-top: 10px;
+    background-color: rgb(19, 130, 194);
+    color: aliceblue;
+    font-size: 16px;
+    padding: 6px;
+    color: aliceblue;
+    border: rgb(19, 130, 194);
+}
+
+.down:hover {
+    background-color: rgb(2, 15, 31);
+    color: aliceblue;
+}
+
+#icons {
+
+    height: auto;
+
+    padding: 5px 5px;
+
+    margin: 0px 300px;
+}
